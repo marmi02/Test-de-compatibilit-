@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test de compatibilité</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 : LA PAGE D'ACCUEIL-->
+<div id="page-accueil" class="page active">
+    <h1>💗 Test de compatibilité 💗</h1>
+    
+    <p>Découvre si vous êtes faits l’un pour l’autre 👀</p>
+    <button onclick="allerPage('page-noms')">Commencer</button>
+</div>
+
+<!-- PAGE 2 : NOMS -->
+<div id="page-noms" class="page">
+    <h2>Entrez vos prénoms</h2>
+    <input type="text" id="nom1" placeholder="Entrez votre prénom">
+    <input type="text" id="nom2" placeholder="Entrez le prénom de la personne 2">
+    <button onclick="demarrerQuiz()">Démarrer le test</button>
+</div>
+
+<!-- PAGE 3 : QUIZ -->
+<div id="page-quiz" class="page">
+    <h2 id="titre-question">Question 1 / 15</h2>
+    <p id="texte-question"></p>
+    <div id="options"></div>
+    <button onclick="questionSuivante()">Suivant</button>
+</div>
+
+<!-- PAGE 4 : RESULTATS -->
+<div id="page-resultat" class="page">
+    <h2>💯 Résultat final</h2>
+    <p id="resultat-noms"></p>
+    <p id="score-final"></p>
+    <button onclick="location.reload()">Recommencer</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
